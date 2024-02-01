@@ -1,0 +1,40 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.slider-section {
+    color: $turquoise-blue;
+    padding-top: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.slider-section h1 {
+    font-size: 2.2rem;
+    line-height: 165%;
+}
+
+.advice-image {
+    margin-top: 4rem;
+    @include flex-column;
+}
+
+.advice-image img {
+    height: 400px;
+}
+
+.slick-slider {
+    height: 100%;
+}
+
+.slick-arrow {
+    height: 4rem;
+    width: 4rem;
+    z-index: 9;
+}
+
+.slick-next {
+    right: -10px;
+}
+.slick-prev {
+    left: -10px;
+}
