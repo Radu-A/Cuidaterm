@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use("/auth", authRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/dataform", dataformRouter);
-app.get("/test", function (req, res) {
+app.get("/", function (req, res) {
   res.send("It's alive!");
 });
 
