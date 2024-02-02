@@ -6,11 +6,12 @@ const usersRouter = require("./routes/usersRoutes");
 const dataformRouter = require("./routes/dataformRoutes");
 const app = express();
 const port = 4000;
+const client = process.env.CLIENT;
 
 // Middlewares
 app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
-app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+app.use(cors({ credentials: true, origin: client }));
 app.use(cookieParser());
 
 // Routes

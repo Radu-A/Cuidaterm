@@ -7,10 +7,10 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://cuidaterm-server.onrender.com",
+        target: "http://localhost:4000",
       },
       "/auth": {
-        target: "https://cuidaterm-server.onrender.com",
+        target: "http://localhost:4000",
       },
     },
   },
